@@ -38,7 +38,7 @@ tela = pygame.display
 pygame.mixer.init()
 pygame.init()
 pygame.mixer.music.load('sons/fundo.wav')
-pygame.mixer.music.play()
+pygame.mixer.music.play(-1)
 tela.init()
 
 
@@ -147,7 +147,10 @@ while True:
               pontos_do_castor += 1
               tentativa_jogador = True
               print('ERROU')
-              
+
+            bonk = pygame.mixer.Sound('sons/pompom.wav')
+            bonk.play()
+
           #se nada ocorrer, continua o jogo
           else:
             pass
