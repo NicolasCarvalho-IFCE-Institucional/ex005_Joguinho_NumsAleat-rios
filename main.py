@@ -44,7 +44,7 @@ tela.init()
 
 #configurando opções da tela
 dimensoes = tela.set_mode((largura, altura))
-tela.set_caption('bicho piruleta')
+tela.set_caption('Beto, o castor')
 argumentos_secundarios = None
 
 
